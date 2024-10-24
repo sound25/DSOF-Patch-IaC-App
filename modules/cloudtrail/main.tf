@@ -3,4 +3,5 @@ resource "aws_cloudtrail" "insecure-logging" {
   s3_bucket_name = "my-cloudtrail-bucket"
   enable_logging = "true"
   enable_log_file_validation="true"
+  kms_key_id="kms_key_id"
 }
