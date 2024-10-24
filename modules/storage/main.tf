@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "insecure-bucket" {
   bucket = "insecure-bucket"
+  versioning = "true"
 }
 
 resource "aws_s3_bucket_versioning" "insecure-bucket-versioning" {
