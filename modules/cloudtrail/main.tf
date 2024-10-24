@@ -4,4 +4,5 @@ resource "aws_cloudtrail" "insecure-logging" {
   enable_logging = "true"
   enable_log_file_validation="true"
   kms_key_id="kms_key_id"
+  is_multi_region_trail="true"
 }
